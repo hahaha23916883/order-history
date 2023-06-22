@@ -1,13 +1,301 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #f6f6f6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background-color: #47B9F9;
+  padding: 20px 10px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  display: inline;
+}
+
+.no-value-p {
+  color: #909090;
+  font-size: 20px;
+}
+
+
+.order {
+  padding: 12px;
+}
+
+.order-body {
+  background-color: #FFFFFF;
+  padding: 12px;
+  border-radius: 8px;
+  border: #E9E9E9 1px solid;
+  box-shadow: 0 0 15px 0 #90909030;
+}
+
+.pay-btn {
+  width: 40%;
+  background-color: #f6f6f6;
+  color: #909090;
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px 0;
+  border: #E9E9E9 1px solid;
+}
+
+.list-content {
+  margin-bottom: 6px;
+}
+
+
+.list-title {
+  color: #909090;
+  padding-right: 6px;
+}
+
+.total {
+  display: inline;
+  color: #47B9F9;
+}
+
+.total-content {
+  font-size: 20px;
+}
+
+.total-content p {
+  color: #47B9F9;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 6px 0;
+  padding: 6px 0;
+  border-top: #f6f6f6 1px solid;
+  border-bottom: #f6f6f6 1px solid;
+}
+
+.image {
+height: 60px;
+width: 60px;
+object-fit: cover;
+border-radius: 4px;
+}
+
+.list-detail {
+  background-color: #f6f6f6;
+  color: #909090;
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px 0;
+  border: #E9E9E9 1px solid;
+}
+
+.list-detail p {
+  margin-right: 6px;
+}
+
+.list-detail-content {
+  display: none;
+  background-color: #f6f6f6;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: #E9E9E9 1px solid;
+}
+
+.list-detail-card {
+  border-bottom: #E9E9E9 1px solid;
+  padding: 12px
+}
+
+.detail-content-header {
+  display: flex;
+  margin-bottom: 12px;
+  height: 60px;
+}
+
+.detail-content-header .image {
+  height: 60px;
+  width: 60px;
+}
+
+
+.detail-content-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 12px;
+  flex-grow: 1;
+}
+
+.detail-content-header-text p {
+  font-size: 14px;
+  color: #252525;
+}
+
+#note {
+  color: #909090;
+}
+
+.product-num {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.product-num p {
+  font-size: 14px;
+}
+
+.detail-list {
+  display: flex;
+  gap: 20px;
+}
+
+hr {
+  margin: 6px 0;
+  border: 0 #E9E9E9;
+  border-bottom: #E9E9E9 1px solid;
+}
+
+.list-detail-card .list-content {
+  margin-bottom: 0;
+}
+
+.up-icon {
+  display: none;
+}
+
+/* 預約活動css */
+h3 {
+  margin: 0 0 6px;
+  color: #47B9F9;
+  font-size: 20px;
+}
+
+.serve-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serve-state {
+  font-size: 16px
+}
+
+.serve-btn-body {
+  display: flex;
+  gap: 12px;
+}
+
+.serve-btn {
+  background-color: #E9E9E9;
+  border: #f6f6f6 1px solid;
+  padding: 6px;
+  border-radius: 4px;
+  color: #909090;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/* 切換標題 tab css */
+.tab-body {
+  margin-top: 6px;
+}
+
+/* Tabs */
+.react-tabs {
+  position: relative;
+}
+
+.react-tabs__tab-list {
+  /* border-bottom: 1px solid #ccc; */
+  /* margin: 0 0 10px; */
+  padding: 6px 12px 0 !important ;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  border-radius: 4px;
+  background: #f7f7f7;
+  /* border: 1px solid #ccc; */
+  border-bottom: none;
+  cursor: pointer;
+  padding: 6px 12px;
+}
+
+.react-tabs__tab--selected {
+  background: white;
+  border-color: #0074e4;
+  border-bottom: none;
+  color: #FFFFFF !important;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  background-color: #47B9F9 !important;
+}
+
+.react-tabs__tab:focus {
+  outline: none;
+}
+
+/* Tab Panels */
+.react-tabs__tab-panel {
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+/* Accessibility */
+.react-tabs__tab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.react-tabs__tab {
+  /* font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5; */
+  color: #909090;
+  background-color: #f7f7f7;
+  border-color: #ccc;
+  border-bottom: none;
+}
+
+.react-tabs__tab--selected {
+  color: #000;
+  background-color: #fff;
+  border-color: #0074e4;
+}
+
+/* Animation */
+.react-tabs__tab-panel {
+  animation: react-tabs__tab-panel--animate 250ms ease-in-out;
+}
+
+@keyframes react-tabs__tab-panel--animate {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
